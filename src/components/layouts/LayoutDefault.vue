@@ -2,7 +2,7 @@
   <Header :toggleSidebar="toggleSidebar" :openSidebar="openSidebar" />
 
   <Sidebar :toggleSidebar="toggleSidebar" :openSidebar="openSidebar" />
-  <main class="bg-color-10 ml-auto w-[calc(100%-19rem)] p-4" :class="{ 'w-full' : !openSidebar}">
+  <main class="bg-color-10 ml-auto w-[calc(100%-19rem)] p-4 max-lg:w-full max-lg:p-2" :class="{ 'w-full' : !openSidebar}">
     <slot />
   </main>
 </template>

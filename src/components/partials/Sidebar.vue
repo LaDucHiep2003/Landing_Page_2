@@ -2,7 +2,7 @@
   <aside :class="{
       'hidden': !openSidebar,
       'block': openSidebar,
-      'fixed top-0 left-0 w-[19rem] p-3 border-r border-color-2 overflow-y-auto bg-white h-screen' : true
+      'fixed top-0 left-0 w-[19rem] p-3 border-r border-color-2 overflow-y-auto bg-white h-screen max-lg:hidden' : true
   }">
     <div class="flex justify-between items-center mb-6 ">
       <svg width="73" height="44" viewBox="0 0 73 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

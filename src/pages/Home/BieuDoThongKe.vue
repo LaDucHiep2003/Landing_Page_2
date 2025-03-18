@@ -4,7 +4,7 @@
       <div class="text-base font-semibold text-color-1 ">Biểu đồ thống kê</div>
     </div>
     <div class="p-4">
-      <div class="grid grid-cols-4 items-center gap-3 mb-5">
+      <div class="grid grid-cols-4 items-center gap-3 mb-5 max-sm:grid-cols-2">
         <div class="bg-color-5 h-32 rounded-lg p-3 flex flex-col justify-between">
           <div class="bg-white w-8 h-8 flex justify-center items-center rounded-md">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,9 +59,9 @@
         </div>
       </div>
 <!--      Bieu do cot-->
-      <div class="p-4 border border-color-2 rounded-2xl">
+      <div class="p-4 border border-color-2 rounded-2xl max-md:p-2">
         <div class="flex justify-between items-end">
-          <div class="text-base text-color-1 font-semibold">Tiến độ công việc theo quý <span class="text-color-3 ml-2">(2024)</span></div>
+          <div class="text-base text-color-1 font-semibold">Tiến độ công việc theo quý<span class="text-color-3 ml-2">(2024)</span></div>
           <div class="flex gap-2">
             <div class="w-8 h-8 bg-white border border-color-2 rounded-lg flex justify-center items-center">
               <svg class="rotate-180" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@
             <div class="absolute left-0 right-0 h-[1px] bg-color-10 top-1/4"></div>
             <div class="absolute left-0 right-0 h-[1px] bg-color-10 top-2/4"></div>
             <div class="absolute left-0 right-0 h-[1px] bg-color-10 top-3/4"></div>
-            <div class="absolute left-0 bottom-0 flex gap-5">
+            <div class="absolute left-0 bottom-0 flex gap-5 justify-between w-full">
               <div class="grid grid-cols-3 gap-1 items-end">
                 <div class="w-7 bg-[#0990F7] h-10 rounded-[4px]"></div>
                 <div class="w-7 bg-[#17B26A] h-[110px] rounded-[4px]"></div>
@@ -98,7 +98,7 @@
                 <div class="w-7 bg-[#17B26A] h-[110px] rounded-[4px]"></div>
                 <div class="w-7 bg-[#F04438] h-3 rounded-[4px]"></div>
               </div>
-              <div class="grid grid-cols-3 gap-1 items-end">
+              <div class="grid grid-cols-3 gap-1 items-end max-md:hidden">
                 <div class="w-7 bg-[#0990F7] h-10 rounded-[4px]"></div>
                 <div class="w-7 bg-[#17B26A] h-[110px] rounded-[4px]"></div>
                 <div class="w-7 bg-[#F04438] h-3 rounded-[4px]"></div>
@@ -115,7 +115,7 @@
           <div class="text-xs text-color-1 text-center">Quý 1</div>
           <div class="text-xs text-color-1">Quý 2</div>
           <div class="text-xs text-color-1">Quý 3</div>
-          <div class="text-xs text-color-1">Quý 4</div>
+          <div class="text-xs text-color-1 max-md:hidden">Quý 4</div>
         </div>
         <div class="flex justify-around items-center mt-5">
           <div class="flex gap-2 items-center">
@@ -133,7 +133,7 @@
         </div>
       </div>
 <!--      Bieu do duong-->
-      <div class="p-4 border border-color-2 rounded-2xl mt-5">
+      <div class="p-4 border border-color-2 rounded-2xl mt-5 max-md:p-2">
         <div class="flex justify-between items-end">
           <div class="text-base text-color-1 font-semibold">Số lượng công việc theo tháng<span class="text-color-3 ml-2">(2024)</span></div>
           <div class="flex gap-2">

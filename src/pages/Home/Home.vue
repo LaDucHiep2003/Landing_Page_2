@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-5">
+  <div class="grid grid-cols-2 gap-5 max-xl:grid-cols-1">
     <div v-if="openAI" class="bg-white rounded-xl">
       <div class="py-4 px-3 border-b border-color-7 max-h-[74px]">
         <div class="p-[3px] bg-color-10 flex justify-between items-center rounded-lg">
@@ -32,7 +32,17 @@
       <BieuDoThongKe :openAI="openAI" />
     </div>
 <!--  Neu bat chat thi hien chat noi dung be phai  -->
-    <div v-if="openAI" class="bg-white rounded-xl relative">
+<!--    <div v-if="openAI" class="bg-white rounded-xl relative">-->
+<!--      <TroLyAI :handleOpenAI="handleOpenAI" />-->
+<!--    </div>-->
+    <div
+        v-if="openAI"
+        :class="{
+        'opacity-100 scale-100 pointer-events-auto': openAI,
+        'opacity-0 scale-95 pointer-events-none': !openAI,
+  }"
+        class="max-xl:fixed top-0 overflow-auto max-xl:w-full left-0 max-xl:z-[1000] max-xl:bg-white rounded-xl right-0 bottom-0 transition-all duration-300 ease-in-out transform"
+    >
       <TroLyAI :handleOpenAI="handleOpenAI" />
     </div>
 <!--    Neu khong thi bat noi dung cong viec-->

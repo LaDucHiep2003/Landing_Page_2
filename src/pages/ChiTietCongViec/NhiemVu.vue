@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-3 gap-4">
+  <div class="grid grid-cols-3 gap-4 max-xl:grid-cols-2 max-md:grid-cols-1">
     <div class="pt-6 pb-3 px-6 bg-white rounded-xl">
       <div class="text-xl font-semibold text-color-1 mb-5">Chưa thực hiện <span class="text-color-3">(3)</span></div>
       <div @click="handleDetailWork" class="p-4 border border-color-2 rounded-2xl mb-3 cursor-pointer">
