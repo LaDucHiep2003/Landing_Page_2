@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[700px] h-[650px] bg-white p-4 rounded-2xl transition-all duration-300 ease-in-out overflow-y-auto"
+  <div class="w-[700px] h-[650px] max-md:w-[400px] bg-white p-4 rounded-2xl transition-all duration-300 ease-in-out overflow-y-auto"
        style="scrollbar-width: none;">
     <div class=" flex justify-between items-center gap-2">
       <input type="text" placeholder="Tên nhiệm vụ" class="focus:outline-none border border-color-2 w-full py-2 px-4

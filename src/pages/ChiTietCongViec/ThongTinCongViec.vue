@@ -7,7 +7,7 @@
         <path d="M14.9998 10H15.0073" stroke="#667085" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M4.99976 10H5.00724" stroke="#667085" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <div v-if="editInformation" class="p-2 text-sm font-medium border border-color-2 rounded-md z-10 shadow-sd-2 absolute top-10 right-0 w-44">
+      <div v-if="editInformation" class="p-2 text-sm bg-white font-medium border border-color-2 rounded-md z-10 shadow-sd-2 absolute top-10 right-0 w-44">
         <div @click="handleEditWork" class="p-2 flex gap-2 items-center cursor-pointer">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.6615 1.85931H5.16883C3.11883 1.85931 1.8335 3.31065 1.8335 5.36531V10.908C1.8335 12.9626 3.11283 14.414 5.16883 14.414H11.0515C13.1082 14.414 14.3875 12.9626 14.3875 10.908V8.22265" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,7 +31,7 @@
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9202 3.48092L12.4431 6.52321C12.5923 6.82188 12.8804 7.02898 13.2145 7.0769L16.6211 7.56726C17.4628 7.68878 17.7977 8.70887 17.1886 9.29337L14.7252 11.6604C14.4831 11.8932 14.3729 12.2278 14.4301 12.5564L15.0115 15.8983C15.1547 16.7249 14.2748 17.3557 13.5225 16.9646L10.4777 15.3857C10.1792 15.2308 9.82168 15.2308 9.52232 15.3857L6.4775 16.9646C5.72519 17.3557 4.84533 16.7249 4.98937 15.8983L5.56987 12.5564C5.62714 12.2278 5.51694 11.8932 5.27485 11.6604L2.8114 9.29337C2.20226 8.70887 2.5372 7.68878 3.37889 7.56726L6.78554 7.0769C7.11961 7.02898 7.40856 6.82188 7.55781 6.52321L9.07979 3.48092C9.45638 2.72869 10.5436 2.72869 10.9202 3.48092Z" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <div class="text-base font-normal text-color-3 max-md:text-sm">Mức độ ưu tiên</div>
+          <div class="text-base font-normal text-color-3">Mức độ ưu tiên</div>
         </div>
         <div class="flex-1 px-2">
           <button class="py-1 px-2 bg-color-18 rounded-md flex items-center gap-1">
@@ -45,7 +45,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <div class="text-sm font-semibold text-color-20 max-md:text-xs">Thấp</div>
+            <div class="text-sm font-semibold text-color-20">Thấp</div>
           </button>
         </div>
       </div>
@@ -62,13 +62,13 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="text-base font-normal text-color-3 max-md:text-sm">Trạng thái</div>
+          <div class="text-base font-normal text-color-3">Trạng thái</div>
         </div>
         <div class="relative flex-1 px-2">
           <button
               class="py-1 px-2 rounded-md flex items-center gap-1 bg-color-5"
           >
-            <div class="text-sm font-semibold text-color-4 max-md:text-xs">Chưa thực hiện</div>
+            <div class="text-sm font-semibold text-color-4">Chưa thực hiện</div>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 6L7.29289 9.29289C7.62623 9.62623 7.79289 9.79289 8 9.79289C8.20711 9.79289 8.37377 9.62623 8.70711 9.29289L12 6" stroke="#7F56D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -89,10 +89,10 @@
             <path d="M5.31027 1.33325V3.52711" stroke="#475467" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8255 2.38599H5.18064C3.22285 2.38599 2 3.47661 2 5.48134V11.5144C2 13.5507 3.22285 14.6665 5.18064 14.6665H10.8193C12.7833 14.6665 14 13.5696 14 11.5649V5.48134C14.0062 3.47661 12.7895 2.38599 10.8255 2.38599Z" stroke="#475467" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <div class="text-base font-normal text-color-3 max-md:text-sm">Thời gian</div>
+          <div class="text-base font-normal text-color-3">Thời gian</div>
         </div>
         <div class="px-2">
-          <div class="text-base font-medium text-color-3 flex gap-2 items-center max-md:text-sm">
+          <div class="text-base font-medium text-color-3 flex gap-2 items-center">
             22/01/2025
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.1667 7.81712L3.16669 7.81712" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -107,10 +107,10 @@
             <path d="M16 29.6C16 30.9255 17.0805 32.0185 18.3911 31.8204C21.7497 31.3128 24.8826 29.7448 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.8826 2.25517 21.7497 0.687192 18.3911 0.179608C17.0805 -0.0184644 16 1.07452 16 2.4C16 3.72548 17.0866 4.77424 18.3818 5.05614C20.4633 5.50919 22.3899 6.5507 23.9196 8.08041C26.02 10.1808 27.2 13.0296 27.2 16C27.2 18.9704 26.02 21.8192 23.9196 23.9196C22.3899 25.4493 20.4633 26.4908 18.3818 26.9439C17.0866 27.2258 16 28.2745 16 29.6Z" fill="#7F56D9"/>
             <circle cx="16" cy="16" r="4" fill="#F4EBFF"/>
           </svg>
-          <div class="text-sm font-medium text-color-3 max-md:text-xs">50/100 ngày</div>
+          <div class="text-sm font-medium text-color-3">50/100 ngày</div>
         </div>
       </div>
-      <div v-show="isExpanded" class="flex transition-all duration-300 ease-in-out mb-4">
+      <div v-show="isExpanded" class="flex max-md:flex-wrap transition-all duration-300 ease-in-out mb-4">
         <div class="flex gap-2 items-center w-1/6 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_958_7432)">
@@ -123,20 +123,20 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="text-base font-normal text-color-3 max-md:text-sm">Người tạo</div>
+          <div class="text-base font-normal text-color-3 ">Người tạo</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 md:px-2">
           <div class="py-1 flex items-center gap-2">
             <img src="@/assets/images/Avatar.png" alt="Avatar" class="w-6 h-6">
             <div class="text-base font-medium text-color-3 max-md:text-sm">Phạm Kim Chi</div>
-            <div class="py-[2px] px-[6px] bg-color-10 rounded-[4px] text-sm font-medium text-color-3 max-md:text-xs">Trưởng phòng thiết kế </div>
+            <div class="py-[2px] px-[6px] bg-color-10 rounded-[4px] text-sm font-medium text-color-3">Trưởng phòng thiết kế </div>
           </div>
         </div>
       </div>
     </div>
     <div v-show="isExpanded" class="py-5 border-t border-color-2 transition-all duration-300 ease-in-out">
       <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/6">
+        <div class="flex gap-2 items-center w-1/6 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_970_23731)">
               <path d="M8.33337 15H11.6667" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -148,14 +148,14 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="text-base font-normal text-color-3">Phòng ban</div>
+          <div class="text-base font-normal text-color-3 ">Phòng ban</div>
         </div>
         <div class="flex-1 px-2">
-          <div class="text-base font-medium text-color-3">Phòng Marketing</div>
+          <div class="text-base font-medium text-color-3 ">Phòng Marketing</div>
         </div>
       </div>
-      <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/6">
+      <div class="flex mb-4 max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/6 max-md:w-1/2 max-md:mb-1">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_970_23739)">
               <path d="M10.416 18.3337H5.49174C4.20392 18.3337 3.17961 17.707 2.2599 16.8308C0.377154 15.0371 3.46835 13.6037 4.64732 12.9017C6.52185 11.7855 8.7381 11.4261 10.8327 11.8235" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -170,16 +170,16 @@
           </svg>
           <div class="text-base font-normal text-color-3">Người quản lý</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 md:px-2">
           <div class="py-1 flex items-center gap-2">
             <img src="@/assets/images/Avatar.png" alt="Avatar" class="w-6 h-6">
-            <div class="text-base font-medium text-color-3">Phạm Kim Chi</div>
+            <div class="text-base font-medium text-color-3 max-md:text-sm">Phạm Kim Chi</div>
             <div class="py-[2px] px-[6px] bg-color-10 rounded-[4px] text-sm font-medium text-color-3">Trưởng phòng thiết kế </div>
           </div>
         </div>
       </div>
-      <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/6">
+      <div class="flex mb-4 max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/6 max-md:w-1/2 max-md:mb-1">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.3117 15C17.9361 15 18.4327 14.6071 18.8787 14.0576C19.7916 12.9328 18.2928 12.034 17.7212 11.5938C17.14 11.1463 16.4912 10.8928 15.8333 10.8333M15 9.16667C16.1506 9.16667 17.0833 8.23392 17.0833 7.08333C17.0833 5.93274 16.1506 5 15 5" stroke="#667085" stroke-width="1.5" stroke-linecap="round"/>
             <path d="M2.68834 15C2.06392 15 1.56726 14.6071 1.12133 14.0576C0.208446 12.9328 1.70726 12.034 2.27891 11.5938C2.86001 11.1463 3.50886 10.8928 4.16671 10.8333M4.58337 9.16667C3.43278 9.16667 2.50004 8.23392 2.50004 7.08333C2.50004 5.93274 3.43278 5 4.58337 5" stroke="#667085" stroke-width="1.5" stroke-linecap="round"/>
@@ -188,7 +188,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Thành viên</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 md:px-2">
           <div class="flex gap-2 items-center">
             <div class="flex items-center">
               <div class="w-6 h-6 border border-color-10 rounded-full">
@@ -199,8 +199,8 @@
               </div>
             </div>
             <div class="text-base font-medium text-color-3">Nguyễn Hoàng Anh</div>
-            <div class="w-8 h-8 rounded-full bg-color-22 flex justify-center items-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="w-8 h-8 max-md:w-6 max-md:h-6 rounded-full bg-color-22 flex justify-center items-center">
+              <svg class="max-md:w-3 max-md:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.00002 2.66669V13.3334M13.3334 8.00002H2.66669" stroke="#7F56D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
@@ -208,21 +208,21 @@
         </div>
       </div>
       <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/6">
+        <div class="flex gap-2 items-center w-1/6 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2805 2.30148H6.73712C5.00379 2.29481 3.58379 3.67564 3.54212 5.40898V14.3565C3.50462 16.1081 4.89462 17.5581 6.64546 17.5956C6.67629 17.5956 6.70712 17.5965 6.73712 17.5956H13.3938C15.1355 17.534 16.5121 16.099 16.5021 14.3565V6.69814L12.2805 2.30148Z" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M12.0624 2.29175V4.71591C12.0624 5.89925 13.0199 6.85841 14.2032 6.86175H16.4982" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M9.70072 8.25732V13.2915" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M11.6554 10.2203L9.70124 8.25775L7.74707 10.2203" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <div class="text-base font-normal text-color-3">File đính kèm</div>
+          <div class="text-base font-normal text-color-3 ">File đính kèm</div>
         </div>
         <div class="flex-1 px-2">
           <div class="text-base font-medium text-color-3">Thêm file</div>
         </div>
       </div>
-      <div class="flex">
-        <div class="flex gap-2 items-start w-1/6">
+      <div class="flex max-md:flex-wrap">
+        <div class="flex gap-2 items-start w-1/6 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.0969 13.5195H7.0802" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M13.0969 10.0307H7.0802" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -231,7 +231,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Mô tả</div>
         </div>
-        <div class="flex-1">
+        <div class="md:flex-1">
             <div class="text-base font-medium py-[6px] px-2 rounded-lg border border-white text-color-3 focus:outline-none w-full">
               AI Agent – Trợ lý thông minh giúp tự động hóa công việc, phân tích dữ liệu và tạo nội dung sáng tạo. Với khả năng học hỏi và tương tác linh hoạt, AI Agent
                 tối ưu hiệu suất và hỗ trợ ra quyết định hiệu quả. 🚀
