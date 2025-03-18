@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white border-b border-color-2 w-[calc(100%-19rem)] ml-auto" :class="{ 'w-full' : !openSidebar}">
-    <div class="container mx-auto flex justify-between items-center h-[70px]">
+    <div class="p-4 flex justify-between items-center h-[70px]">
       <div class="flex items-center gap-2">
         <div :class="{ hidden: $route.name === 'Home' || $route.name === 'quanlynguoidung' || $route.name === 'danhsachcongviec' || $route.name === 'phan-nhom-nguoi-dung'}" @click="goBack" class="w-6 h-6 bg-white rounded-[4px] flex justify-center items-center cursor-pointer border border-color-2">
           <svg class="rotate-[270deg]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

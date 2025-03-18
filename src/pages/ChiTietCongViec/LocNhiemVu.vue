@@ -7,36 +7,88 @@
         </svg>
         <input type="text" class="focus:outline-none text-md text-color-3 pl-1" placeholder="Tìm kiếm nhiệm vụ...">
       </label>
-      <div class="flex bg-white py-[10px] px-[14px] rounded-lg w-[180px] border border-color-2">
-        <div class="flex gap-2 items-center justify-between w-full">
-          <div class="text-base font-normal text-color-3">Mức độ ưu tiên</div>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6L7.29289 9.29289C7.62623 9.62623 7.79289 9.79289 8 9.79289C8.20711 9.79289 8.37377 9.62623 8.70711 9.29289L12 6" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+      <div class="flex bg-white rounded-lg w-[180px] border border-color-2">
+        <div class="relative flex-1">
+          <input type="checkbox" id="dropdownToggle3" class="hidden peer w-full" />
+          <label
+              for="dropdownToggle3"
+              class="flex gap-2 items-center justify-between w-full cursor-pointer py-[10px] px-[14px]"
+          >
+            <div class="text-base font-normal text-color-3">{{ selectedLevel }}</div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6L7.29289 9.29289C7.62623 9.62623 7.79289 9.79289 8 9.79289C8.20711 9.79289 8.37377 9.62623 8.70711 9.29289L12 6" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div
+              class="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-md border border-gray-200 z-10 hidden peer-checked:block"
+          >
+            <div
+                v-for="(option, key) in optionLevel"
+                :key="key"
+                @click="selectLevel(option)"
+                class="p-3 text-sm hover:bg-gray-100 border-b border-gray-200 cursor-pointer flex gap-3 items-center justify-between font-medium"
+            >
+              <div class="flex gap-3 items-center">
+                {{ option.label }}
+              </div>
+              <svg
+                  v-if="selectedLevel === option.label"
+                  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="flex bg-white py-[10px] px-[14px] rounded-lg w-[180px] border border-color-2">
-        <div class="flex gap-2 items-center justify-between w-full">
-          <div class="text-base font-normal text-color-3">Trạng thái</div>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6L7.29289 9.29289C7.62623 9.62623 7.79289 9.79289 8 9.79289C8.20711 9.79289 8.37377 9.62623 8.70711 9.29289L12 6" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+      <div class="flex bg-white rounded-lg w-[180px] border border-color-2">
+        <div class="relative flex-1">
+          <input type="checkbox" id="dropdownToggle2" class="hidden peer w-full" />
+          <label
+              for="dropdownToggle2"
+              class="flex gap-2 items-center justify-between w-full cursor-pointer py-[10px] px-[14px]"
+          >
+            <div class="text-base font-normal text-color-3">{{ selectedStatus }}</div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6L7.29289 9.29289C7.62623 9.62623 7.79289 9.79289 8 9.79289C8.20711 9.79289 8.37377 9.62623 8.70711 9.29289L12 6" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div
+              class="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-md border border-gray-200 z-10 hidden peer-checked:block"
+          >
+            <div
+                v-for="(option, key) in optionStatus"
+                :key="key"
+                @click="selectStatus(option)"
+                class="p-3 text-sm hover:bg-gray-100 border-b border-gray-200 cursor-pointer flex gap-3 items-center justify-between font-medium"
+            >
+              <div class="flex gap-3 items-center">
+                {{ option.label }}
+              </div>
+              <svg
+                  v-if="selectedStatus === option.label"
+                  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="flex bg-white  rounded-lg w-[180px] border border-color-2">
-        <div class="relative flex-1 py-[10px] px-[14px]">
-          <button
-              @click="toggleDropdown"
-              class="flex gap-2 items-center justify-between w-full"
+      <div class="flex bg-white rounded-lg w-[180px] border border-color-2">
+        <div class="relative flex-1">
+          <input type="checkbox" id="dropdownToggle" class="hidden peer w-full" />
+          <label
+              for="dropdownToggle"
+              class="flex gap-2 items-center justify-between w-full cursor-pointer py-[10px] px-[14px]"
           >
             <div class="text-base font-normal text-color-3">{{ selectedOption === "" ? "Kiểu xem" : selectedOption }}</div>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 6L7.29289 9.29289C7.62623 9.62623 7.79289 9.79289 8 9.79289C8.20711 9.79289 8.37377 9.62623 8.70711 9.29289L12 6" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </button>
+          </label>
           <div
-              v-if="isOpen"
-              class="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-md border border-gray-200 z-10"
+              class="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-md border border-gray-200 z-10 hidden peer-checked:block"
           >
             <div
                 v-for="(option, key) in options"
@@ -71,23 +123,37 @@
 export default {
   data(){
     return{
-      isOpen: false,
       selectedOption: "",
+      selectedStatus : "Trạng thái",
+      selectedLevel : "Mức độ ưu tiên",
       options: [
         { label: "Bảng", color: "#98A2B3" },
         { label: "Lưới", color: "#2E90FA" },
       ],
+      optionStatus :[
+        { label : "Active"},
+        { label : "Inactive"}
+      ],
+      optionLevel : [
+        { label : "Basic"},
+        { label : "Medium"}
+      ]
     }
   },
   methods: {
-    toggleDropdown() {
-      this.isOpen = !this.isOpen;
-    },
     selectOption(option) {
       this.selectedOption = option.label;
-      this.isOpen = false;
+      document.getElementById("dropdownToggle").checked = false;
       this.$emit('updateViewType', option.label);
     },
+    selectStatus(option){
+      this.selectedStatus = option.label;
+      document.getElementById("dropdownToggle2").checked = false;
+    },
+    selectLevel(option){
+      this.selectedLevel = option.label;
+      document.getElementById("dropdownToggle3").checked = false;
+    }
   },
   props:{
     handleMission:{
