@@ -64,7 +64,7 @@
     'opacity-100 scale-100 pointer-events-auto': createWork,
     'opacity-0 scale-95 pointer-events-none': !createWork,
   }"
-      class="fixed top-0 left-0 z-20 right-0 bottom-0 flex justify-center items-center transition-all duration-300 ease-in-out transform"
+      class="fixed top-0 left-0 z-[101] right-0 bottom-0 flex justify-center items-center transition-all duration-300 ease-in-out transform"
       style="background: rgba(0, 0, 0, 0.5)"
   >
     <ThemCongViec :handleCreateWork="handleCreateWork" />

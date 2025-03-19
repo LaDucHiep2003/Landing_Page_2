@@ -27,44 +27,44 @@
         </div>
         Danh sách quyền
       </div>
-      <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full p-4">
+      <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full p-4 max-md:p-3 max-md:px-2">
         <input type="checkbox" class="hidden">
         <span class="checkmark w-5 h-5 rounded-md relative"></span>
         <div class="text-sm font-semibold text-color-1">Chọn tất cả</div>
       </label>
       <div class="border border-color-2 rounded-2xl">
         <div>
-          <div class="bg-color-10 border-b border-color-2 p-4 rounded-tr-2xl rounded-tl-2xl">
+          <div class="bg-color-10 border-b border-color-2 p-4 rounded-tr-2xl rounded-tl-2xl max-md:p-3 max-md:px-2">
             <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full">
               <input type="checkbox" class="hidden">
               <span class="checkmark w-5 h-5 rounded-md relative"></span>
               <div class="text-sm font-semibold text-color-1">Tài khoản</div>
             </label>
           </div>
-          <div class="px-4 py-5 flex justify-between items-center flex-wrap">
-            <div class="pr-4 w-full">
+          <div class="px-4 py-5 flex justify-between items-center max-md:flex-wrap max-md:px-2 max-md:py-3">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium text-color-3">Xem tài khoản</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2 max-md:border-none">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium text-color-3">Tạo tài khoản</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium d text-color-3">Cập nhật tài khoản</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
+            <div class="pr-4 w-full max-md:w-1/2  max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 max-md:border-none">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium text-color-3">Xoá tài khoản</div>
@@ -73,37 +73,37 @@
           </div>
         </div>
         <div>
-          <div class="bg-color-10 border-b border-color-2 p-4">
+          <div class="bg-color-10 border-b border-color-2 p-4 rounded-tr-2xl rounded-tl-2xl max-md:p-3 max-md:px-2">
             <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full">
               <input type="checkbox" class="hidden">
               <span class="checkmark w-5 h-5 rounded-md relative"></span>
               <div class="text-sm font-semibold text-color-1">Vai trò</div>
             </label>
           </div>
-          <div class="px-4 py-5 flex justify-between items-center">
-            <div class="pr-4 w-full">
+          <div class="px-4 py-5 flex justify-between items-center max-md:flex-wrap max-md:px-2 max-md:py-3">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium text-color-3">Xem vai trò</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2 max-md:border-none">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium text-color-3">Tạo vai trò</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật vai trò</div>
+                <div class="text-sm font-medium d text-color-3">Cập nhật vai trò</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
+            <div class="pr-4 w-full max-md:w-1/2  max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 max-md:border-none">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
                 <div class="text-sm font-medium text-color-3">Xoá vai trò</div>
@@ -112,277 +112,70 @@
           </div>
         </div>
         <div>
-          <div class="bg-color-10 border-b border-color-2 p-4">
+          <div class="bg-color-10 border-b border-color-2 p-4 rounded-tr-2xl rounded-tl-2xl max-md:p-3 max-md:px-2">
             <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full">
               <input type="checkbox" class="hidden">
               <span class="checkmark w-5 h-5 rounded-md relative"></span>
               <div class="text-sm font-semibold text-color-1">Công việc</div>
             </label>
           </div>
-          <div class="px-4 py-5 flex justify-between items-center border-b border-color-2 ">
-            <div class="pr-4 w-full">
+          <div class="px-4 py-5 flex justify-between items-center max-md:flex-wrap border-b border-color-2 max-md:px-2 max-md:py-3">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem công việc của bản thân</div>
+                <div class="text-sm font-medium text-color-3 flex-1">Xem công việc của bản thân</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2 max-md:border-none">
+                <input type="checkbox" class="hidden">
+                <span class="checkmark w-5 h-5 rounded-md relative"></span>
+                <div class="text-sm font-medium text-color-3 flex-1">Xem tất cả công việc</div>
+              </label>
+            </div>
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem tất cả công việc</div>
+                <div class="text-sm font-medium d text-color-3 flex-1">Theo dõi công việc</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
+            <div class="pr-4 w-full max-md:w-1/2  max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 max-md:border-none">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Theo dõi công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Tạo công việc</div>
+                <div class="text-sm font-medium text-color-3 flex-1">Tạo công việc</div>
               </label>
             </div>
           </div>
-          <div class="px-4 py-5 flex justify-between items-center">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
+          <div class="px-4 py-5 flex justify-between items-center max-md:flex-wrap max-md:px-2 max-md:py-3">
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao toàn bộ công việc  </div>
+                <div class="text-sm font-medium d text-color-3 flex-1">Giao công việc của bản thân</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
+            <div class="pr-4 w-full max-md:w-1/2  max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 max-md:border-none">
+                <input type="checkbox" class="hidden">
+                <span class="checkmark w-5 h-5 rounded-md relative"></span>
+                <div class="text-sm font-medium text-color-3 flex-1">Giao toàn bộ công việc</div>
+              </label>
+            </div>
+            <div class="pr-4 w-full max-md:w-1/2 max-md:mb-2">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật công việc của bản thân</div>
+                <div class="text-sm font-medium d text-color-3 flex-1">Cập nhật công việc của bản thân</div>
               </label>
             </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
+            <div class="pr-4 w-full max-md:w-1/2  max-md:pr-0 max-md:mb-2">
+              <label class="flex items-center cursor-pointer custom-checkbox gap-2 max-md:border-none">
                 <input type="checkbox" class="hidden">
                 <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật toàn bộ công việc</div>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="bg-color-10 border-b border-color-2 p-4">
-            <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full">
-              <input type="checkbox" class="hidden">
-              <span class="checkmark w-5 h-5 rounded-md relative"></span>
-              <div class="text-sm font-semibold text-color-1">Công việc</div>
-            </label>
-          </div>
-          <div class="px-4 py-5 flex justify-between items-center border-b border-color-2 ">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem tất cả công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Theo dõi công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Tạo công việc</div>
-              </label>
-            </div>
-          </div>
-          <div class="px-4 py-5 flex justify-between items-center">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao toàn bộ công việc  </div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật toàn bộ công việc</div>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="bg-color-10 border-b border-color-2 p-4">
-            <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full">
-              <input type="checkbox" class="hidden">
-              <span class="checkmark w-5 h-5 rounded-md relative"></span>
-              <div class="text-sm font-semibold text-color-1">Công việc</div>
-            </label>
-          </div>
-          <div class="px-4 py-5 flex justify-between items-center border-b border-color-2 ">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem tất cả công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Theo dõi công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Tạo công việc</div>
-              </label>
-            </div>
-          </div>
-          <div class="px-4 py-5 flex justify-between items-center">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao toàn bộ công việc  </div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật toàn bộ công việc</div>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="bg-color-10 border-b border-color-2 p-4">
-            <label class="flex items-center cursor-pointer custom-checkbox gap-2 w-full">
-              <input type="checkbox" class="hidden">
-              <span class="checkmark w-5 h-5 rounded-md relative"></span>
-              <div class="text-sm font-semibold text-color-1">Công việc</div>
-            </label>
-          </div>
-          <div class="px-4 py-5 flex justify-between items-center border-b border-color-2 ">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Xem tất cả công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Theo dõi công việc</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Tạo công việc</div>
-              </label>
-            </div>
-          </div>
-          <div class="px-4 py-5 flex justify-between items-center">
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Giao toàn bộ công việc  </div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2  border-r border-color-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật công việc của bản thân</div>
-              </label>
-            </div>
-            <div class="pr-4 w-full">
-              <label class="flex items-center cursor-pointer custom-checkbox gap-2">
-                <input type="checkbox" class="hidden">
-                <span class="checkmark w-5 h-5 rounded-md relative"></span>
-                <div class="text-sm font-medium text-color-3">Cập nhật toàn bộ công việc</div>
+                <div class="text-sm font-medium text-color-3 flex-1">Cập nhật toàn bộ công việc</div>
               </label>
             </div>
           </div>

@@ -12,7 +12,7 @@
     'opacity-100 scale-100 pointer-events-auto': createMission,
     'opacity-0 scale-95 pointer-events-none': !createMission,
   }"
-      class="fixed top-0 left-0 right-0 bottom-0 z-20 flex justify-center items-center transition-all duration-300 ease-in-out transform"
+      class="fixed top-0 left-0 right-0 bottom-0 z-[101] flex justify-center items-center transition-all duration-300 ease-in-out transform"
       style="background: rgba(0, 0, 0, 0.5)"
   >
     <ThemNhiemVu :handleMission="handleMission" />
@@ -22,7 +22,7 @@
       'opacity-100 scale-100 pointer-events-auto': deleteWork,
       'opacity-0 scale-95 pointer-events-none': !deleteWork,
   }"
-      class="fixed top-0 left-0 right-0 bottom-0 z-20 flex justify-center items-center transition-all duration-300 ease-in-out transform"
+      class="fixed top-0 left-0 right-0 bottom-0 z-[101] flex justify-center items-center transition-all duration-300 ease-in-out transform"
       style="background: rgba(0, 0, 0, 0.5)"
   >
     <XoaCongViec :handleDeleteWork="handleDeleteWork" />
@@ -32,7 +32,7 @@
       'opacity-100 scale-100 pointer-events-auto': editWork,
       'opacity-0 scale-95 pointer-events-none': !editWork,
   }"
-      class="fixed top-0 left-0 right-0 bottom-0 z-20 flex justify-center items-center transition-all duration-300 ease-in-out transform"
+      class="fixed top-0 left-0 right-0 bottom-0 z-[101] flex justify-center items-center transition-all duration-300 ease-in-out transform"
       style="background: rgba(0, 0, 0, 0.5)"
   >
     <SuaCongViec :handleEditWork="handleEditWork" />
@@ -43,7 +43,7 @@
       'opacity-100 scale-100 pointer-events-auto': detailWork,
       'opacity-0 scale-95 pointer-events-none': !detailWork,
   }"
-      class="fixed top-0 left-0 right-0 bottom-0 z-20 flex justify-center items-center transition-all duration-300 ease-in-out transform"
+      class="fixed top-0 left-0 right-0 bottom-0 z-[101] flex justify-center items-center transition-all duration-300 ease-in-out transform"
       style="background: rgba(0, 0, 0, 0.5)"
   >
     <ChiTietNhiemVu :handleDetailWork="handleDetailWork" />
@@ -53,7 +53,7 @@
       'opacity-100 scale-100 pointer-events-auto': editMission,
       'opacity-0 scale-95 pointer-events-none': !editMission,
   }"
-      class="fixed top-0 left-0 right-0 bottom-0 z-20 flex justify-center items-center transition-all duration-300 ease-in-out transform"
+      class="fixed top-0 left-0 right-0 bottom-0 z-[101] flex justify-center items-center transition-all duration-300 ease-in-out transform"
       style="background: rgba(0, 0, 0, 0.5)"
   >
     <SuaNhiemVu :handleEditMission="handleEditMission" />
