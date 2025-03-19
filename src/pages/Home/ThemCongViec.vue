@@ -263,7 +263,7 @@
         </div>
       </div>
       <div class="grid grid-cols-2 items-center gap-3 mt-10">
-        <div class="py-[10px] px-4 bg-color-10 rounded-md text-base font-semibold cursor-pointer text-color-3 text-center">Hủy</div>
+        <div @click="handleCreateWork" class="py-[10px] px-4 bg-color-10 rounded-md text-base font-semibold cursor-pointer text-color-3 text-center">Hủy</div>
         <div class="py-[10px] px-4 bg-color-4 rounded-md text-base font-semibold cursor-pointer text-white text-center">Thêm</div>
       </div>
     </div>
@@ -285,9 +285,12 @@ export default {
     };
   },
   methods: {
+    toggleDropdown() {
+      this.isOpen = !this.isOpen;
+    },
     selectOption(option) {
       this.selectedOption = option.label;
-      document.getElementById("dropdownToggle").checked = false;
+      this.isOpen = false;
     },
     handleFileUpload(event) {
       const file = event.target.files[0];
