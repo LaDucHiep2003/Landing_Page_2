@@ -4,8 +4,8 @@
       Danh sách nhóm người dùng <span class="text-color-3 ml-2">(8)</span>
     </div>
     <!--    Danh sach-->
-
-    <table class="w-full">
+    <div class="overflow-x-auto">
+      <table class="w-full">
       <thead>
       <tr class="border-b border-color-2">
         <th class="text-left text-xs font-medium text-color-6 py-4 px-6 whitespace-nowrap w-[30%]">
@@ -122,6 +122,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 </template>
 

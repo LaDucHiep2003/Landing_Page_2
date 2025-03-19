@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-xl min-h-screen mx-auto p-4">
+  <div class="bg-white rounded-xl min-h-screen mx-auto p-4 max-md:p-2">
     <div class="text-lg font-semibold text-color-1 mb-5">
       <div class="flex gap-4 items-center mb-5">
         <div class="w-10 h-10 bg-color-10 rounded-xl flex justify-center items-center">
@@ -41,7 +41,7 @@
               <div class="text-sm font-semibold text-color-1">Tài khoản</div>
             </label>
           </div>
-          <div class="px-4 py-5 flex justify-between items-center">
+          <div class="px-4 py-5 flex justify-between items-center flex-wrap">
             <div class="pr-4 w-full">
               <label class="flex items-center cursor-pointer custom-checkbox gap-2 border-r border-color-2">
                 <input type="checkbox" class="hidden">

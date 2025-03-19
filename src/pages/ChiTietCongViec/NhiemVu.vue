@@ -1,8 +1,8 @@
 <template>
   <div class="grid grid-cols-3 gap-4 max-xl:grid-cols-2 max-md:grid-cols-1">
-    <div class="pt-6 pb-3 px-6 bg-white rounded-xl">
-      <div class="text-xl font-semibold text-color-1 mb-5">Chưa thực hiện <span class="text-color-3">(3)</span></div>
-      <div @click="handleDetailWork" class="p-4 border border-color-2 rounded-2xl mb-3 cursor-pointer">
+    <div class="pt-6 pb-3 px-6 bg-white rounded-xl max-lg:px-3 max-lg:py-4">
+      <div class="text-xl font-semibold text-color-1 mb-5 max-lg:mb-3">Chưa thực hiện <span class="text-color-3">(3)</span></div>
+      <div @click="handleDetailWork" class="p-4 max-lg:p-3 border border-color-2 rounded-2xl mb-3 cursor-pointer">
         <div class="flex justify-between items-center gap-3 mb-2 px-2">
           <div class="flex gap-2 items-center">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@
           <div class="text-base font-medium text-color-3">0/5 nhiệm vụ</div>
         </div>
       </div>
-      <div class="p-4 border border-color-2 rounded-2xl mb-3">
+      <div class="p-4 max-lg:p-3 border border-color-2 rounded-2xl mb-3">
         <div class="flex justify-between items-center gap-3 mb-2">
           <div class="flex gap-2 items-center px-2">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +126,7 @@
           <div class="text-base font-medium text-color-3">0/5 nhiệm vụ</div>
         </div>
       </div>
-      <div class="p-4 border border-color-2 rounded-2xl mb-3">
+      <div class="p-4 max-lg:p-3 border border-color-2 rounded-2xl mb-3">
         <div class="flex justify-between items-center gap-3 mb-2">
           <div class="flex gap-2 items-center px-2">
             <div class="text-lg font-semibold text-color-1 line-clamp-1">Triển khai</div>
@@ -179,9 +179,9 @@
         </div>
       </div>
     </div>
-    <div class="pt-6 pb-3 px-6 bg-white rounded-xl">
-      <div class="text-xl font-semibold text-color-1 mb-5">Đang thực hiện <span class="text-color-3">(1)</span></div>
-      <div class="p-4 border border-[#B692F6] rounded-2xl mb-3">
+    <div class="pt-6 pb-3 px-6 bg-white rounded-xl max-lg:py-4 max-lg:px-3">
+      <div class="text-xl font-semibold text-color-1 mb-5 max-lg:mb-3">Đang thực hiện <span class="text-color-3">(1)</span></div>
+      <div class="p-4 border border-[#B692F6] rounded-2xl mb-3 max-lg:p-3">
         <div class="flex justify-between items-center gap-3 mb-2 px-2">
           <div class="flex gap-2 items-center">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,9 +244,9 @@
         </div>
       </div>
     </div>
-    <div class="pt-6 pb-3 px-6 bg-white rounded-xl">
-      <div class="text-xl font-semibold text-color-1 mb-5">Hoàn thành <span class="text-color-3">(1)</span></div>
-      <div class="p-4 border border-color-2 rounded-2xl mb-3">
+    <div class="pt-6 pb-3 px-6 bg-white rounded-xl max-lg:py-4 max-lg:px-3">
+      <div class="text-xl font-semibold text-color-1 mb-5 max-lg:mb-3">Hoàn thành <span class="text-color-3">(1)</span></div>
+      <div class="p-4 border border-color-2 rounded-2xl mb-3 max-lg:p-3">
         <div class="flex justify-between items-center gap-3 mb-2 px-2">
           <div class="flex gap-2 items-center">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

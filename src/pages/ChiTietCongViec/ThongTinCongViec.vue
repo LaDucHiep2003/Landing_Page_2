@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-6 pb-3 px-6 bg-white rounded-xl">
+  <div class="pt-6 pb-3 px-6 bg-white rounded-xl max-md:px-4 max-md:py-4">
     <div class="text-2xl max-md:text-xl font-semibold text-color-1 mb-5 flex justify-between items-center relative">
       <div>Thiết kế Website</div>
       <svg @click="toggleEdit" class="rotate-90 cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +91,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Thời gian</div>
         </div>
-        <div class="px-2">
+        <div class="px-2 flex gap-3 items-center max-lg:gap-1 max-md:px-0">
           <div class="text-base font-medium text-color-3 flex gap-2 items-center">
             22/01/2025
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,15 +99,15 @@
               <path d="M9.13348 3.80086L13.1668 7.81686L9.13348 11.8335" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             22/09/2505</div>
-        </div>
-        <div class="flex gap-3 items-center ml-5">
-          <svg class="max-md:w-6 max-md:h-6" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="16" fill="white"/>
-            <path d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM4.8 16C4.8 22.1856 9.81441 27.2 16 27.2C22.1856 27.2 27.2 22.1856 27.2 16C27.2 9.81441 22.1856 4.8 16 4.8C9.81441 4.8 4.8 9.81441 4.8 16Z" fill="#F2F4F7"/>
-            <path d="M16 29.6C16 30.9255 17.0805 32.0185 18.3911 31.8204C21.7497 31.3128 24.8826 29.7448 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.8826 2.25517 21.7497 0.687192 18.3911 0.179608C17.0805 -0.0184644 16 1.07452 16 2.4C16 3.72548 17.0866 4.77424 18.3818 5.05614C20.4633 5.50919 22.3899 6.5507 23.9196 8.08041C26.02 10.1808 27.2 13.0296 27.2 16C27.2 18.9704 26.02 21.8192 23.9196 23.9196C22.3899 25.4493 20.4633 26.4908 18.3818 26.9439C17.0866 27.2258 16 28.2745 16 29.6Z" fill="#7F56D9"/>
-            <circle cx="16" cy="16" r="4" fill="#F4EBFF"/>
-          </svg>
-          <div class="text-sm font-medium text-color-3">50/100 ngày</div>
+            <div class="flex gap-3 items-center ml-5 max-md:ml-1 max-md:gap-1">
+              <svg  width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="white"/>
+                <path d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM4.8 16C4.8 22.1856 9.81441 27.2 16 27.2C22.1856 27.2 27.2 22.1856 27.2 16C27.2 9.81441 22.1856 4.8 16 4.8C9.81441 4.8 4.8 9.81441 4.8 16Z" fill="#F2F4F7"/>
+                <path d="M16 29.6C16 30.9255 17.0805 32.0185 18.3911 31.8204C21.7497 31.3128 24.8826 29.7448 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.8826 2.25517 21.7497 0.687192 18.3911 0.179608C17.0805 -0.0184644 16 1.07452 16 2.4C16 3.72548 17.0866 4.77424 18.3818 5.05614C20.4633 5.50919 22.3899 6.5507 23.9196 8.08041C26.02 10.1808 27.2 13.0296 27.2 16C27.2 18.9704 26.02 21.8192 23.9196 23.9196C22.3899 25.4493 20.4633 26.4908 18.3818 26.9439C17.0866 27.2258 16 28.2745 16 29.6Z" fill="#7F56D9"/>
+                <circle cx="16" cy="16" r="4" fill="#F4EBFF"/>
+              </svg>
+              <div class="text-sm font-medium text-color-3">50/100 ngày</div>
+            </div>
         </div>
       </div>
       <div v-show="isExpanded" class="flex max-md:flex-wrap transition-all duration-300 ease-in-out mb-4">

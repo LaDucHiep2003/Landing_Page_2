@@ -2,6 +2,10 @@
   <div class="bg-white border-b border-color-2 w-[calc(100%-19rem)] ml-auto max-lg:w-full" :class="{ 'w-full' : !openSidebar}">
     <div class="p-4 flex justify-between items-center h-[70px]">
       <div class="flex items-center gap-2">
+        <svg v-if="!openSidebar" @click="toggleSidebar" class="cursor-pointer rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#F4EBFF"/>
+          <path d="M16.0005 15.3334L12.6672 12.0001L16.0005 8.66675M11.3338 15.3334L8.00049 12.0001L11.3338 8.66675" stroke="#7F56D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <div :class="{ hidden: $route.name === 'Home' || $route.name === 'quanlynguoidung' || $route.name === 'danhsachcongviec' || $route.name === 'phan-nhom-nguoi-dung'}" @click="goBack" class="w-6 h-6 bg-white rounded-[4px] flex justify-center items-center cursor-pointer border border-color-2">
           <svg class="rotate-[270deg]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 12.5L10 7.5L5 12.5" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -9,7 +13,7 @@
         </div>
         <div class="text-xl font-semibold text-color-1 max-sm:text-lg">{{ pageTitle }}</div>
       </div>
-      <div class="h-10 flex justify-between items-center gap-5 max-md:h-6 max-md:gap-2">
+      <div class="h-10 flex justify-between items-center gap-5 max-md:h-6 max-md:gap-1">
         <div class="bg-linear-gradient-1 px-4 h-10 rounded-md flex justify-center items-center gap-1 max-md:h-6 max-md:px-1">
           <svg class="max-lg:h-4 max-md:w-4" width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.1665 10.0126C2.1665 5.62268 5.67484 1.66675 10.5165 1.66675C15.2498 1.66675 18.8332 5.54757 18.8332 9.98756C18.8332 15.137 14.6332 18.3334 10.4998 18.3334C9.13317 18.3334 7.6165 17.9662 6.39984 17.2485C5.97484 16.9897 5.6165 16.7978 5.15817 16.948L3.47484 17.4488C3.04984 17.5823 2.6665 17.2485 2.7915 16.7978L3.34984 14.9283C3.4415 14.6696 3.42484 14.3942 3.2915 14.1772C2.57484 12.8585 2.1665 11.4147 2.1665 10.0126ZM9.4165 10.0126C9.4165 10.6052 9.8915 11.0809 10.4832 11.0892C11.0748 11.0892 11.5498 10.6052 11.5498 10.0209C11.5498 9.42839 11.0748 8.95268 10.4832 8.95268C9.89984 8.94433 9.4165 9.42839 9.4165 10.0126ZM13.2582 10.0209C13.2582 10.6052 13.7332 11.0892 14.3248 11.0892C14.9165 11.0892 15.3915 10.6052 15.3915 10.0209C15.3915 9.42839 14.9165 8.95268 14.3248 8.95268C13.7332 8.95268 13.2582 9.42839 13.2582 10.0209ZM6.6415 11.0892C6.05817 11.0892 5.57484 10.6052 5.57484 10.0209C5.57484 9.42839 6.04984 8.95268 6.6415 8.95268C7.23317 8.95268 7.70817 9.42839 7.70817 10.0209C7.70817 10.6052 7.23317 11.0809 6.6415 11.0892Z" fill="white"/>

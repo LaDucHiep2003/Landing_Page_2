@@ -45,3 +45,11 @@ html{
     @apply xl:max-w-[1170px] xl:px-0;
     @apply transition-all ease-in-out;
 }
+aside{
+    animation: showMenu 400ms ease forwards;
+}
+@keyframes showMenu {
+    to{
+        left : 0
+    }
+}

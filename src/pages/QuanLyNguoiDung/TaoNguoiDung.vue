@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-6 pb-3 bg-white rounded-xl min-h-screen">
+  <div class="pt-6 pb-3 bg-white rounded-xl min-h-screen max-md:py-4">
     <div class="text-lg font-semibold text-color-1 mb-5 px-4 flex gap-4 items-center">
       <div class="w-10 h-10 bg-color-10 rounded-xl flex justify-center items-center">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@
       </div>
       Thông tin tài khoản
     </div>
-    <div class="px-4 grid grid-cols-2 gap-4 mb-5">
+    <div class="px-4 grid grid-cols-2 gap-4 mb-5 max-md:grid-cols-1">
       <div class="mb-2">
         <div class="text-sm font-medium text-color-1 mb-1">Họ và Tên <span class="text-color-4">*</span></div>
         <input type="text" placeholder="Nhập họ và tên" class="py-[10px] px-[14px] border border-color-11 focus:outline-none
@@ -131,7 +131,7 @@
       </div>
       Thông tin tài khoản
     </div>
-    <div class="px-4 grid grid-cols-2 gap-4 mb-5">
+    <div class="px-4 grid grid-cols-2 gap-4 mb-5 max-md:grid-cols-1">
       <div class="mb-2">
         <div class="text-sm font-medium text-color-1 mb-1">Tên công ty <span class="text-color-4">*</span></div>
         <input type="text" placeholder="Nhập tên công ty" class="py-[10px] px-[14px] border border-color-11 focus:outline-none
@@ -171,7 +171,7 @@
         </div>
       </div>
     </div>
-    <div class="px-4 w-1/2 flex justify-between items-center mb-5">
+    <div class="px-4 w-1/2 flex justify-between items-center mb-5 max-md:w-full">
       <div class="text-base font-medium text-color-1">Trạng thái hoạt động</div>
       <label class="cursor-pointer">
         <input type="checkbox" class="absolute opacity-0 custom_switch_input">
@@ -179,7 +179,7 @@
       </label>
     </div>
     <div class="border-t border-color-2 px-4">
-      <div class="py-5 flex justify-end gap-3">
+      <div class="py-5 flex justify-end gap-3 max-md:justify-between">
         <div class="py-[10px] px-[14px] w-36 text-center rounded-md border border-color-11 shadow-sd-1 text-sm font-semibold text-color-1">Hủy</div>
         <div class="py-[10px] px-[14px] w-36 text-center rounded-md border bg-linear-gradient-2 shadow-sd-2 text-sm font-semibold text-white">Tạo</div>
       </div>

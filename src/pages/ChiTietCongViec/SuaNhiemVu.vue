@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[700px] h-[650px] bg-white p-4 rounded-2xl transition-all duration-300 ease-in-out overflow-y-auto"
+  <div class="w-[700px] h-[650px] max-md:w-full max-md:h-full bg-white p-4 rounded-2xl transition-all duration-300 ease-in-out overflow-y-auto"
        style="scrollbar-width: none;">
     <div class=" flex justify-between items-center gap-2">
       <input type="text" placeholder="Tên công việc" class="focus:outline-none border border-color-2 w-full py-2 px-4
@@ -10,25 +10,25 @@
     </div>
     <div class="border-b border-color-2 py-4">
       <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/3">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.849 13.11C17.849 16.0917 16.0915 17.8492 13.1099 17.8492H6.62488C3.63571 17.8492 1.87488 16.0917 1.87488 13.11V6.61C1.87488 3.6325 2.96988 1.875 5.95238 1.875H7.61904C8.21738 1.87583 8.78071 2.15667 9.13904 2.63583L9.89988 3.6475C10.2599 4.12583 10.8232 4.4075 11.4215 4.40833H13.7799C16.769 4.40833 17.8724 5.93 17.8724 8.9725L17.849 13.11Z" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M6.23413 12.0524H13.5133" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <div class="text-base font-normal text-color-3">Công việc</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="flex-1 px-2 max-md:px-0">
           <div class="text-base font-medium text-color-1">Thiết kế Website khách hàng</div>
         </div>
       </div>
       <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/3">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9202 3.48092L12.4431 6.52321C12.5923 6.82188 12.8804 7.02898 13.2145 7.0769L16.6211 7.56726C17.4628 7.68878 17.7977 8.70887 17.1886 9.29337L14.7252 11.6604C14.4831 11.8932 14.3729 12.2278 14.4301 12.5564L15.0115 15.8983C15.1547 16.7249 14.2748 17.3557 13.5225 16.9646L10.4777 15.3857C10.1792 15.2308 9.82168 15.2308 9.52232 15.3857L6.4775 16.9646C5.72519 17.3557 4.84533 16.7249 4.98937 15.8983L5.56987 12.5564C5.62714 12.2278 5.51694 11.8932 5.27485 11.6604L2.8114 9.29337C2.20226 8.70887 2.5372 7.68878 3.37889 7.56726L6.78554 7.0769C7.11961 7.02898 7.40856 6.82188 7.55781 6.52321L9.07979 3.48092C9.45638 2.72869 10.5436 2.72869 10.9202 3.48092Z" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <div class="text-base font-normal text-color-3">Mức độ ưu tiên</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="flex-1 px-2 max-md:px-0">
           <button class="py-1 px-2 bg-color-18 rounded-md flex items-center gap-1">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_901_18031)">
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/3">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_958_7419)">
               <path d="M18.3333 10.0001C18.3333 5.39771 14.6023 1.66675 9.99996 1.66675C5.39758 1.66675 1.66663 5.39771 1.66663 10.0001C1.66663 14.6024 5.39758 18.3334 9.99996 18.3334C14.6023 18.3334 18.3333 14.6024 18.3333 10.0001Z" stroke="#667085" stroke-width="1.5"/>
@@ -59,7 +59,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Trạng thái</div>
         </div>
-        <div class="relative flex-1 px-2">
+        <div class="relative flex-1 px-2 max-md:px-0">
           <button
               @click="toggleDropdown"
               class="py-1 px-2 rounded-md flex items-center gap-1 bg-color-5"
@@ -93,8 +93,8 @@
           </div>
         </div>
       </div>
-      <div class="flex mb-4">
-        <div class="flex gap-2 items-center w-1/3">
+      <div class="flex mb-4 max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2 max-md:mb-2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_958_7432)">
               <path d="M9.99996 6.66675V13.3334M13.3333 10.0001H6.66663" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,7 +108,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Người tạo</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 px-2 max-md:px-0">
           <button class="py-1 flex items-center gap-2">
             <img src="@/assets/images/Avatar.png" alt="Avatar" class="w-6 h-6">
             <div class="text-base font-medium text-color-3">Phạm Kim Chi</div>
@@ -116,8 +116,8 @@
           </button>
         </div>
       </div>
-      <div class="flex ">
-        <div class="flex gap-2 items-center w-1/3">
+      <div class="flex items-center max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2 max-md:mb-2">
           <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.06152 6.26931H13.9442" stroke="#475467" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10.9615 8.87307H10.9676" stroke="#475467" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -132,7 +132,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Thời gian</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="flex-1 px-2 max-md:px-0">
           <div class="text-base font-medium text-color-1 flex gap-2 items-center">
             22/01/2025
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,7 +145,7 @@
     </div>
     <div class="border-b border-color-2 py-4">
       <div class="flex mb-5">
-        <div class="flex gap-2 items-center w-1/3">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_970_23731)">
               <path d="M8.33337 15H11.6667" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -159,12 +159,12 @@
           </svg>
           <div class="text-base font-normal text-color-3">Phòng ban</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="flex-1 px-2 max-md:px-0">
           <div class="text-base font-medium text-color-1">Phòng Marketing</div>
         </div>
       </div>
-      <div class="flex mb-5">
-        <div class="flex gap-2 items-center w-1/3">
+      <div class="flex mb-5 max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2 max-md:mb-2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_970_23739)">
               <path d="M10.416 18.3337H5.49174C4.20392 18.3337 3.17961 17.707 2.2599 16.8308C0.377154 15.0371 3.46835 13.6037 4.64732 12.9017C6.52185 11.7855 8.7381 11.4261 10.8327 11.8235" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -179,7 +179,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Người quản lý</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 max-md:px-0">
           <div class="py-1 flex items-center gap-2">
             <img src="@/assets/images/Avatar.png" alt="Avatar" class="w-6 h-6">
             <div class="text-base font-medium text-color-3">Phạm Kim Chi</div>
@@ -187,8 +187,8 @@
           </div>
         </div>
       </div>
-      <div class="flex mb-5">
-        <div class="flex gap-2 items-center w-1/3">
+      <div class="flex mb-5 max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2 max-md:mb-2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.3117 15C17.9361 15 18.4327 14.6071 18.8787 14.0576C19.7916 12.9328 18.2928 12.034 17.7212 11.5938C17.14 11.1463 16.4912 10.8928 15.8333 10.8333M15 9.16667C16.1506 9.16667 17.0833 8.23392 17.0833 7.08333C17.0833 5.93274 16.1506 5 15 5" stroke="#667085" stroke-width="1.5" stroke-linecap="round"/>
             <path d="M2.68834 15C2.06392 15 1.56726 14.6071 1.12133 14.0576C0.208446 12.9328 1.70726 12.034 2.27891 11.5938C2.86001 11.1463 3.50886 10.8928 4.16671 10.8333M4.58337 9.16667C3.43278 9.16667 2.50004 8.23392 2.50004 7.08333C2.50004 5.93274 3.43278 5 4.58337 5" stroke="#667085" stroke-width="1.5" stroke-linecap="round"/>
@@ -197,7 +197,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">Thành viên</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 px-2 max-md:px-0">
           <div class="flex gap-2 items-center">
             <div class="flex items-center">
               <div class="w-6 h-6 border border-color-10 rounded-full">
@@ -216,8 +216,8 @@
           </div>
         </div>
       </div>
-      <div class="flex mb-5">
-        <div class="flex gap-2 items-center w-1/3">
+      <div class="flex mb-5 max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2 max-md:mb-2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2805 2.30148H6.73712C5.00379 2.29481 3.58379 3.67564 3.54212 5.40898V14.3565C3.50462 16.1081 4.89462 17.5581 6.64546 17.5956C6.67629 17.5956 6.70712 17.5965 6.73712 17.5956H13.3938C15.1355 17.534 16.5121 16.099 16.5021 14.3565V6.69814L12.2805 2.30148Z" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M12.0624 2.29175V4.71591C12.0624 5.89925 13.0199 6.85841 14.2032 6.86175H16.4982" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -226,7 +226,7 @@
           </svg>
           <div class="text-base font-normal text-color-3">File đính kèm</div>
         </div>
-        <div class="flex-1 px-2">
+        <div class="md:flex-1 px-2 max-md:px-0">
           <label v-if="!fileName"  class="flex items-center cursor-pointer text-white rounded-lg transition">
             <div class="text-base font-medium text-color-3">Thêm file</div>
             <input type="file" class="hidden" @change="handleFileUpload">
@@ -246,8 +246,8 @@
           </div>
         </div>
       </div>
-      <div class="flex">
-        <div class="flex gap-2 items-center w-1/3">
+      <div class="flex max-md:flex-wrap">
+        <div class="flex gap-2 items-center w-1/3 max-md:w-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.0969 13.5195H7.0802" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M13.0969 10.0307H7.0802" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -256,9 +256,9 @@
           </svg>
           <div class="text-base font-normal text-color-3">Mô tả</div>
         </div>
-        <div class="flex-1">
+        <div class="md:flex-1 w-full">
           <input type="text" placeholder="Nhập mô tả..." class="text-base font-medium focus:bg-color-10 py-[6px] px-2 rounded-lg border focus:border-color-2
-              border-white text-color-1 focus:outline-none w-full" value="Thiết kế Website dự án CMB">
+              border-white text-color-1 focus:outline-none w-full" value="Thiết kế Website dự án CMB s s">
         </div>
       </div>
     </div>

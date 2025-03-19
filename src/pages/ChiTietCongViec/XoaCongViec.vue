@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[400px] h-auto bg-white p-6 rounded-2xl transition-all duration-300 ease-in-out overflow-y-auto"
+  <div class="w-[400px] h-auto max-md:w-full  bg-white p-6 rounded-2xl transition-all duration-300 ease-in-out overflow-y-auto"
        style="scrollbar-width: none;">
     <div class="flex justify-center items-center gap-2 w-20 h-20 rounded-full bg-[#FEF2F1] mx-auto">
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
